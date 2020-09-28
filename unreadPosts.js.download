@@ -1,0 +1,3 @@
+$(document).ready(function()
+{$(".thread_unread").on('click',function(){var element=jQuery(this);var tid=$(this).attr("id");tid=tid.replace('thread','');var classes=$(this).attr("class").replace("new","");$.ajax({type:"POST",url:"xmlhttp.php",data:({tid:tid,action:'unreadPosts_markThread',}),success:function(){element.removeClass().toggleClass(classes);}});});});var unreadPosts={timeout:false,interval:10,enable:false,fid:0,hide:false,updateCounter:function(){if(!unreadPosts.enable){return;}
+$.get("xmlhttp.php?action=unreadPosts_getUnreads&fid"+unreadPosts.fid,function(data){$("#unreadCounter").replaceWith(data);});if(unreadPosts.timeout)clearTimeout(unreadPosts.timeout);unreadPosts.timeout=setTimeout('unreadPosts.updateCounter()',unreadPosts.interval*1000);},};
