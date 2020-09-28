@@ -471,7 +471,7 @@ ul.mycode_list li, ol.mycode_list li {
 </span></span>
 </div>
 <div class="post_body scaleimages" id="pid_16812">
-<div style="text-align: center;" class="mycode_align"><img src="DFL_welcome.png" alt="[Image: DFL_welcome.png]" class="mycode_img"></div>
+<div style="text-align: center;" class="mycode_align"><img src="./src/DFL_welcome.png" alt="[Image: DFL_welcome.png]" class="mycode_img"></div>
 <br>
 <div style="text-align: center;" class="mycode_align"><span style="font-weight: bold;" class="mycode_b"><span style="color: rgb(255, 153, 51); --darkreader-inline-color:#ff9e3d;" class="mycode_color" data-darkreader-inline-color=""><span style="font-size: large;" class="mycode_size">DeepFaceLab 2.0 Guide/Tutorial</span></span></span></div>
 <br>
@@ -799,11 +799,11 @@ Screenshots:</span></span></span><br>
 <br>
 <span style="font-weight: bold;" class="mycode_b">Editor</span><br>
 <br>
-<img src="./7Bk4RRV.jpg" width="500" height="500" alt="[Image: 7Bk4RRV.jpg]" class="mycode_img"><br>
+<img src="./src/7Bk4RRV.jpg" width="500" height="500" alt="[Image: 7Bk4RRV.jpg]" class="mycode_img"><br>
 <br>
 <span style="font-weight: bold;" class="mycode_b">Trainer</span><br>
 <br>
-<img src="NM1Kn3s.jpg" width="500" height="600" alt="[Image: NM1Kn3s.jpg]" class="mycode_img"><br>
+<img src="./src/NM1Kn3s.jpg" width="500" height="600" alt="[Image: NM1Kn3s.jpg]" class="mycode_img"><br>
 <br>
 <div style="text-align: center;" class="mycode_align"><span style="font-weight: bold;" class="mycode_b"><span style="color: rgb(255, 102, 51); --darkreader-inline-color:#ff6e3d;" class="mycode_color" data-darkreader-inline-color=""><span style="font-size: x-large;" class="mycode_size">6. Training:</span></span></span></div>
 <br>
@@ -858,7 +858,7 @@ You will also always get a prompt to select which GPU or CPU&nbsp;you want to ru
 <br>
 Second thing you will see once you startup is the preview window that looks like this:<br>
 <br>
-<img src="aNEoiAN.jpg" alt="[Image: aNEoiAN.jpg]" class="mycode_img"><br>
+<img src="./src/aNEoiAN.jpg" alt="[Image: aNEoiAN.jpg]" class="mycode_img"><br>
 <br>
 Here is a more detailed explanation of all functions in order they are presented to the user upon starting training of a new model:<br>
 <br>
@@ -890,11 +890,11 @@ Here is a more detailed explanation of all functions in order they are presented
 <div style="text-align: justify;" class="mycode_align"><span style="font-weight: bold;" class="mycode_b">d) Whole face</span> - expands that area even more to cover pretty much the whole face, including forehead and even a little bit of hair but this mode should be used when we want to make a swap of the entire face, excluding hair. Additional option for this face type is <span style="font-weight: bold;" class="mycode_b"><span style="color: rgb(255, 102, 51); --darkreader-inline-color:#ff6e3d;" class="mycode_color" data-darkreader-inline-color="">masked_training</span></span> that let's you prioritize learning full face area of face first and then (after disabling) letting the model learn the rest of the face like forehead.</div>
 <div style="text-align: justify;" class="mycode_align"><span style="font-weight: bold;" class="mycode_b">e) Head</span> - is used to do a swap of the entire head, not suitable for subjects with long hair, works best if the source faceset/dataset&nbsp;comes from single source and both SRC and DST have short hair or one&nbsp;that doesn't change shape depending on the angle. Minimum recommended resolution for this face type is 224.<br>
 </div>
-<div style="text-align: justify;" class="mycode_align"><img src="UNDadcN.jpg" width="700" height="300" alt="[Image: UNDadcN.jpg]" class="mycode_img"></div>
+<div style="text-align: justify;" class="mycode_align"><img src="./src/UNDadcN.jpg" width="700" height="300" alt="[Image: UNDadcN.jpg]" class="mycode_img"></div>
 <br>
 <div style="text-align: justify;" class="mycode_align"><span style="font-weight: bold;" class="mycode_b">Example of whole face type face&nbsp;swap:</span></div>
 <br>
-<div style="text-align: justify;" class="mycode_align"><img src="ldlVgZH.png" alt="[Image: ldlVgZH.png]" class="mycode_img"></div>
+<div style="text-align: justify;" class="mycode_align"><img src="./src/ldlVgZH.png" alt="[Image: ldlVgZH.png]" class="mycode_img"></div>
 <br>
 <div style="text-align: justify;" class="mycode_align"><span style="font-weight: bold;" class="mycode_b">Example of head type&nbsp;face&nbsp;swap:<br>
 </span><br>
@@ -931,7 +931,7 @@ Also when changing one parameter the other ones should be changed as well to kee
 </div>
 <div style="text-align: justify;" class="mycode_align"><span style="font-weight: bold;" class="mycode_b"><span style="color: rgb(255, 204, 51); --darkreader-inline-color:#ffcf3d;" class="mycode_color" data-darkreader-inline-color="">Eyes priority ( y/n ?:help ) :</span></span>&nbsp;Attempts to&nbsp;fix problems with eye&nbsp;training by forcing the neural network to train eyes with higher priority.<br>
 Bear in mind that it&nbsp;does not guarantee the right eye direction, it only affects the details of the eyes and area around them. Example (before and&nbsp;after):<br>
-<img src="YQHOuSR.jpg" width="360" height="360" alt="[Image: YQHOuSR.jpg]" class="mycode_img"><br>
+<img src="./src/YQHOuSR.jpg" width="360" height="360" alt="[Image: YQHOuSR.jpg]" class="mycode_img"><br>
 <br>
 <span style="font-weight: bold;" class="mycode_b"><span style="color: rgb(255, 204, 51); --darkreader-inline-color:#ffcf3d;" class="mycode_color" data-darkreader-inline-color="">Place models and optimizer on GPU ( y/n ?:help ) :</span></span>&nbsp;Enabling GPU optimizer puts all the load on your GPU which greatly improves&nbsp;performance (iteration time) but will lead to higher VRAM usage, disabling this feature will offload some work of the optimizer&nbsp;to CPU which decreases load on GPU and VRAM usage thus&nbsp;letting you achieve higher batch size or run more demanding models at the cost of longer iteration times.&nbsp;If you get OOM (out of memory) error and you don't want to lower your batch size or disable some feature&nbsp;you should disable this feature and thus some work will be offloaded to your CPU and some data from GPUs VRAM to system RAM - you will be able to run your model without OOM errors&nbsp;at the cost of lower speed. Default value is y (enabled).<br>
 <br>
@@ -946,11 +946,11 @@ Default value is 0.0 (disabled).</div>
 <br>
 <div style="text-align: justify;" class="mycode_align"><span style="color: rgb(51, 204, 51); --darkreader-inline-color:#47d147;" class="mycode_color" data-darkreader-inline-color=""><span style="font-style: italic;" class="mycode_i">Before/after example of a&nbsp;face trained with GAN at value of 0.1 for 40k&nbsp;iterations:<br>
 </span></span><br>
-<img src="Nbh3mw1.png" width="650" height="400" alt="[Image: Nbh3mw1.png]" class="mycode_img"><br>
+<img src="./src/Nbh3mw1.png" width="650" height="400" alt="[Image: Nbh3mw1.png]" class="mycode_img"><br>
 <br>
 <span style="font-weight: bold;" class="mycode_b"><span style="color: rgb(255, 204, 51); --darkreader-inline-color:#ffcf3d;" class="mycode_color" data-darkreader-inline-color="">'True face' power. ( 0.0000 .. 1.0 ?:help ) :</span></span>&nbsp;True face training with a variable power settings let's you set the model discriminator to higher or lower value, what this does is it tries to make the final face look more like src, as with <span style="font-weight: bold;" class="mycode_b">GAN</span>&nbsp;this feature should only be enabled once random warp is disabled and model is fairly well trained.&nbsp;Consider making a backup&nbsp;before enabling this feature.&nbsp;Never use high values, typical value is 0.01 but you can use even lower ones like&nbsp;0.001.&nbsp;The higher the setting the more result face will look like faces in source dataset which may cause issues with color match and also cause artifacts to show up so it's important to not use high values.&nbsp;It has a small performance impact which may cause OOM error to occur.&nbsp;Default value is 0.0 (disabled).<br>
 <br>
-<img src="czScS9q.png" width="500" height="200" alt="[Image: czScS9q.png]" class="mycode_img"><br>
+<img src="./src/czScS9q.png" width="500" height="200" alt="[Image: czScS9q.png]" class="mycode_img"><br>
 <br>
 <span style="font-weight: bold;" class="mycode_b"><span style="color: rgb(255, 204, 51); --darkreader-inline-color:#ffcf3d;" class="mycode_color" data-darkreader-inline-color="">Face style power ( 0.0..100.0 ?:help ) </span></span><span style="color: rgb(255, 204, 51); --darkreader-inline-color:#ffcf3d;" class="mycode_color" data-darkreader-inline-color="">and&nbsp;<span style="font-weight: bold;" class="mycode_b">Background style power ( 0.0..100.0 ?:help ) :</span></span>&nbsp;This setting controls&nbsp;style transfer of either face or background part of the image, it is used to transfer the style of your target/destination faces (data_dst) over to the final learned face which can improve quality and look of the final result after merging but high values can cause learned face to look more like data_dst than data_src. It&nbsp;will transfer some color/lighting information from DST to result face. It's recommended to not use values higher than&nbsp;10. Start with small values like 0.001-0.01.&nbsp;This feature has big performance impact and using it will increase iteration time and may require you to lower your <span style="font-weight: bold;" class="mycode_b">batch size</span>,&nbsp;<span style="font-weight: bold;" class="mycode_b">disable gpu optimizer or run LRD on CPU</span>.&nbsp;Consider&nbsp;making a&nbsp;backup&nbsp;before enabling this feature.&nbsp;Default value is 0.0 (disabled).<br>
 <br>
@@ -1008,7 +1008,7 @@ Upon selecting any of those a command line window will appear with several promp
 After that's done you will see a command line window with current settings as well as preview window which shows all the controls needed to operate the interactive converter/merger.<br>
 <br>
 <span style="font-weight: bold;" class="mycode_b"><span style="color: rgb(255, 204, 51); --darkreader-inline-color:#ffcf3d;" class="mycode_color" data-darkreader-inline-color=""><span style="font-size: medium;" class="mycode_size">Here is a quick look at both the command line window and converter preview window:</span></span></span><br>
-<img src="BT6vAzW.png" width="1080" height="500" alt="[Image: BT6vAzW.png]" class="mycode_img"><br>
+<img src="./src/BT6vAzW.png" width="1080" height="500" alt="[Image: BT6vAzW.png]" class="mycode_img"><br>
 <br>
 <span style="font-size: medium;" class="mycode_size">Converter features many options that you can use to change the mask type, it's size, feathering/blur, you can add additional color transfer and sharpen/enhance final trained face even further.</span><br>
 <br>
